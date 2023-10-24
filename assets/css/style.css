@@ -255,6 +255,11 @@ ul li{
     padding-bottom: 70px;
 }
 
+@media screen and  (max-width:373px) {
+    .navbar-brand {
+        width: 200px;
+    }
+}
 
 }
   
