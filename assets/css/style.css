@@ -60,13 +60,13 @@ body{
 
 .hero-section-text1{
     color: #4C4C44;
-    font-size: 36px;
+    font-size: 75px;
     font-weight: bold;
 }
 
 .hero-section-text2{
     color: #05A4EB;
-    font-size: 36px;
+    font-size: 75px;
     font-weight: bold;
 }
 
@@ -93,7 +93,7 @@ body{
     padding-top: 120px;
     padding-bottom: 120px;
     color: #4C4C44;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 24px;
     line-height: normal;
     margin: auto;
@@ -158,6 +158,7 @@ body{
     height: 50px;
     border: 2px solid #E1E4E5;
     background: #4C4C44;
+    padding: 10px 10px 10px 25px;
 }
 
 textarea {
@@ -172,7 +173,6 @@ textarea,
 textarea::placeholder,
 input,
 input::placeholder {
-    padding: 10px;
     color:#E1E4E5 !important;
 }
 
@@ -205,16 +205,28 @@ ul li{
     color: #4C4C44;
 }
 
+.btn:focus{
+    box-shadow: none;
+}
+
+.alert{
+    max-width: 720px;
+    margin: auto;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    margin-top: 10px;
+}
 @media screen and  (max-width:767px) {
 
 .navbar-brand {
-    width: 278px;
+    width: 200px;
 }
 
 .navbar-nav {
-    margin-left: 13px;
+    margin-right: 15px;
     gap: 7px;
-    align-items: flex-start;
+    align-items: flex-end;
 }
 
 .navbar-light .navbar-toggler {
@@ -255,11 +267,18 @@ ul li{
     padding-bottom: 70px;
 }
 
+
+}
 @media screen and  (max-width:373px) {
     .navbar-brand {
         width: 200px;
     }
 }
 
+@media screen and  (min-width:768px) and (max-width:991px) {
+    .navbar-nav {
+        margin-left: auto;
+        gap: 18px;
+        align-items: end;
+    }
 }
-  

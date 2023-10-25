@@ -18,9 +18,9 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link" href="#">ABOUT</a>
-                    <a class="nav-link" href="#">SERVICES</a>
-                    <div class="contact-btn"><a class="nav-link" href="#">CONTACT US</a></div>
+                    <a class="nav-link" href="#about">ABOUT</a>
+                    <a class="nav-link" href="#services">SERVICES</a>
+                    <div class="contact-btn"><a class="nav-link" href="#contactus">CONTACT</a></div>
                 </div>
                 </div>
             </nav>
@@ -29,7 +29,7 @@
     <div class="hero-section">
         <div class="container">
             <div class="row mx-auto w-100 hero-section-div">
-                <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                <div class="col-lg-6 col-md-6 col-sm-7 col-12">
                     <div class="hero-section-head">
                         <div class="hero-section-text1">Your</div>
                         <div class="hero-section-text2">Story</div>
@@ -39,8 +39,8 @@
                         <div class="hero-section-text2">Word</div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-12">
-                    <div class="image1 d-none d-md-block"><img src="assets/images/img1.svg" class="w-100"></div>
+                <div class="col-lg-6 col-md-6 col-sm-5 col-12">
+                    <div class="image1 d-none d-md-block"><img src="assets/images/img1.png"></div>
                     <div class="image1 d-block d-md-none"><img src="assets/images/mob-logo.png" class="w-100"></div>
                 </div>
             </div>
@@ -58,7 +58,7 @@
            </div>
         </div>
     </div>
-    <div class="section2">
+    <div class="section2" id="about">
         <div class="container-fluid">
             <div class="section2-heading">What</div>
            <div class="section2-paragraph">
@@ -69,7 +69,7 @@
                 <div class="section2-details"><span class="section2-title1">Quality Assurance: </span>Our rigorous quality control process ensures that every piece of content we produce is polished and ready to make an impact.</div>
                 <div class="section2-details"><span class="section2-title1">Timely Delivery: </span>We respect your deadlines and strive to deliver your content on time, every time.</div>
                 <div class="section2-details"><span class="section2-title1">Client-Centric Approach: </span>Your satisfaction is our priority, and we work closely with you to bring your ideas to life.</div>
-                <div class="section2-05A4EB">Services</div>
+                <div class="section2-05A4EB" id="services">Services</div>
                 <div class="section2-details"><span class="section2-title1">Ghostwritin: </span>Learn what your readers actually want to read.</div>
                 <div class="section2-details pt-3">Engage your online audience with well-researched and thought-provoking short-form content like articles, blog posts, Linkedin, Threads, X (formerly Twitter), and whitepapers.</div>
                 <div class="section2-details"><span class="section2-title1">Educational Email Courses: </span>Offer free education while building massive trust.</div>
@@ -103,28 +103,29 @@
            </div>
         </div>
     </div>
-    <div class="section2 mob-section-form">
+    <div class="section2 mob-section-form" id="contactus">
         <div class="container-fluid">
             <div class="section-form">
                 <div class="form-heading">GET IN TOUCH</div>
-                    <form class="signup-form">
+                    <div class="alert alert-success text-center" id="form-message">Your message recieved successfully. Over team contact you.</div>
+                    <form class="signup-form"   action="contact/contact.php" method="POST" id="contact-form">
                         <div class="mb-3">
                             <div class="login-form-input pt-2">
-                                <input type="email" placeholder="Email" class="form-control">
+                                <input type="email" placeholder="Email" class="form-control" name="email">
                             </div>
                         </div>
                         <div class="mb-3">
                             <div class="login-form-input pt-2">
-                                <input type="text" placeholder="Subject" class="form-control">
+                                <input type="text" placeholder="Subject" class="form-control" name="subject">
                             </div>
                         </div>
                         <div class="mb-3">
                             <div class="login-form-input pt-2">
-                                <textarea name="message" placeholder="Tell Us Something..." class="form-control"></textarea>
+                                <textarea name="message" placeholder="Tell Us Something..." class="form-control" name="message"></textarea>
                             </div>
                         </div>
                         <div class="send-button mt-4 text-center">
-                            <a class="btn" href="#" role="button">SEND MESSAGE</a>
+                            <input class="btn" type="submit" value="SEND MESSAGE">
                         </div>
                     </form>
             </div>
@@ -137,5 +138,7 @@
     </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="assets/js/script.js"></script>
 </body>
 </html>
